@@ -9,6 +9,8 @@ var browserSync = require('browser-sync').create();
 
 const imagemin = require('gulp-imagemin')
 
+var ghpages = require('gh-pages');
+
 function sassTask() {
     // place code for your default task here
     return gulp.src('src/css/app.scss')
@@ -54,6 +56,9 @@ function watch() {
     gulp.watch('src/img/*', gulp.series('img'));
 }
 
+function deploy() {
+    return ghpages.publish('dist', function(err) {});
+}
 
 exports.default = series(html, sassTask, fonts, img, watch);
 exports.saasTask = sassTask;
@@ -61,3 +66,4 @@ exports.html = html;
 exports.watch = watch;
 exports.fonts = fonts;
 exports.img = img;
+exports.deploy = deploy;
