@@ -17,17 +17,20 @@
   },
   "homepage": "https://github.com/hmartinez69/tropicali#readme",
   "devDependencies": {
+    "autoprefixer": "^10.3.3",
     "browser-sync": "^2.27.5",
     "gh-pages": "^3.2.3",
     "glob-parent": "^5.1.2",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.0.1",
+    "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
     "sass": "^1.38.2",
     "trim-newlines": "^3.0.1",
     "yargs-parser": "^13.1.2"
-  },
-  "dependencies": {}
+  }
 }
